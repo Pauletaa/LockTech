@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_app_home"
+    tools:context=".Home">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"/>
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <LinearLayout
+        android:id="@+id/container_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="15dp"
+        android:background="@drawable/shape_container_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewConectar"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@color/azul_fundo"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:text="Conectar-se"
+                                android:textColor="@color/white"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:src="@drawable/bluetooth1" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewDesbloqueio"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@color/azul_fundo"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:text="Desbloqueio"
+                                android:textColor="@color/white"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:src="@drawable/desbloqueio" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                       <androidx.cardview.widget.CardView
+                           android:id="@+id/cardViewConta"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@color/azul_fundo"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp"
+                           android:clickable="true"
+                           android:focusable="true">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:text="@string/txt_conta_home"
+                                android:textColor="@color/white"
+                                android:textSize="22dp"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:src="@drawable/usuario_conta"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewSuporte"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="@color/azul_fundo"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="0dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:paddingHorizontal="20dp"
+                                android:text="Suporte"
+                                android:textColor="@color/white"
+                                android:textSize="22dp"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:src="@drawable/img_suporte"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"/>
+
+
+                    </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

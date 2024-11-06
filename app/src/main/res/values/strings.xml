@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lock Tech</string>
+
+    <string name="hint_email">E-mail</string>
+    <string name="hint_senha">Senha</string>
+    <string name="txt_button_entrar">Entrar</string>
+    <string name="txt_tela_cadastro">Não tem conta? Cadastre-se!</string>
+    <string name="txt_tela_cadastro_nome">Nome</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="txt_button_cadastro">Cadastrar</string>
+    <string name="txtcodigo">Código da Instituição</string>
+    <string name="txt_button_deslogar">Deslogar</string>
+    <string name="txt_conta_home">Conta</string>
+    <string name="nome">Nome</string>
+    <string name="entrar">Entrar</string>
+
+</resources>
